@@ -20,7 +20,7 @@ So, I uninstalled _MacPorts_ with the [guest](http://guide.macports.org/chunked/
 
 I also had to make sure that some paths in my PATH variable were ordered correctly, check `brew doctor` for any fixes that your system may require.
 
-After _homebrew_ installed and my PATH fixed, I closed and re-opened my terminal and installed _MongoDB_ with `brew install mongodb`. It took about 10 minutes, and I'm not up and running.
+After _homebrew_ installed and my PATH fixed, I closed and re-opened my terminal and installed _MongoDB_ with `brew install mongodb`. It took about 10 minutes, and I'm now up and running.
 
 Notes
 ----
