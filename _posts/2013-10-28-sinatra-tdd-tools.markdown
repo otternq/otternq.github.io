@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Sinatra Test Driven Development, Tools"
-date:   2013-10-28 19:00:05
-categories: jekyll update
+date:   2013-10-28 18:00:05
+tags: ["ruby", "sinatra", "TDD"]
 ---
 
 I'm just starting to work with Sinatra / Ruby, and I've been looking at automated testing to help follow Test Driven Development (TDD). 
