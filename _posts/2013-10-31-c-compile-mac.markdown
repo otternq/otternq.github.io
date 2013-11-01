@@ -100,6 +100,17 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 {% endhighlight %}
 
+Finally, compiling my program does not generate any warnings and I no longer need to test each step on the University servers:
+
+{% highlight bash %}
+$ make
+bison -v -t -d c-.y
+flex c-.l  # -d debug
+g++-4.2 -DCPLUSPLUS -g   -c -o lex.yy.o lex.yy.c
+g++-4.2 -DCPLUSPLUS -g   -c -o c-.tab.o c-.tab.c
+g++-4.2  lex.yy.o c-.tab.o -ll -lm  -o c-
+{% endhighlight %}
+
 Notes
 ------
 - I had to reinstall _gmp4_ (`brew reinstall gmp4`) because it was compiled with _libstdc++_ and Maveriks now uses a different library _libc++__. See [Homebrew C++ standard libraries](https://github.com/mxcl/homebrew/wiki/C++-Standard-Libraries) and [3 tips for coding with mavericks](http://blog.new-bamboo.co.uk/2013/10/24/3-quick-tips-for-coding-with-os-x-10-9-mavericks) for more details.
