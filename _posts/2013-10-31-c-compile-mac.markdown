@@ -111,6 +111,13 @@ g++-4.2 -DCPLUSPLUS -g   -c -o c-.tab.o c-.tab.c
 g++-4.2  lex.yy.o c-.tab.o -ll -lm  -o c-
 {% endhighlight %}
 
+Still not done
+------
+
+You may have noticed that the _makefile_ has `g++-4.2` specified as the compiler, not ideal. So I linked `g++-4.2` to `g++` so that my _makefile_ is universal with `g++`.
+
+`ln -s /usr/local/Cellar/apple-gcc42/4.2.1-5666.3/bin/g++-4.2 /usr/local/bin/g++`
+
 Notes
 ------
 - I had to reinstall _gmp4_ (`brew reinstall gmp4`) because it was compiled with _libstdc++_ and Maveriks now uses a different library _libc++__. See [Homebrew C++ standard libraries](https://github.com/mxcl/homebrew/wiki/C++-Standard-Libraries) and [3 tips for coding with mavericks](http://blog.new-bamboo.co.uk/2013/10/24/3-quick-tips-for-coding-with-os-x-10-9-mavericks) for more details.
