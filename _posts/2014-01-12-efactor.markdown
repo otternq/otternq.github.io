@@ -1,0 +1,22 @@
+---
+layout: post
+title: "E-Factor Logging"
+date: "2014-01-12 15:00:00"
+tags: ["peopleware", "efactor"]
+---
+
+This weekend I've been reading _Peopleware: Productive Projects and Teams_ by Tom Lister, Tom DeMarco. [Amazon](http://www.amazon.com/Peopleware-Productive-Projects-Teams-3rd/dp/0321934113)
+
+Okay, citations out of the way. Without making this a book review, here is the gist of one section: **Your environment effects your productivity**. Seems like a no-brainer, noise and interruptions cause lower productivity, what I like about this book is that they let you know how to log it so that you can tell just **how much** it effects you.
+
+I'm going to do a horrible job explaining this. Really, go checkout [the book](http://www.amazon.com/Peopleware-Productive-Projects-Teams-3rd/dp/0321934113) and skip the next paragraph.
+
+So you log it...so what? Well, now you have data to support your arguments. Say you are getting an excessive number of interruptions, instead of going to your boss and simply complaining, go to your boss with data showing how many interruptions you are actually receiving and how much **more** work you get done without those interruptions. If you're receiving phone call after phone call then log those and you will be able to use what _Peopleware_ calls the **E-Factor** to calculate how much an interruption can set you back.
+
+> **E-factor** = _actual work hours_ / _body hours_
+
+Now, I work remote so my interruptions are minimal but I'm still interested in how my work would be effected if I worked at the office. Also its a Sunday and I'm bored. So...I open **Sublime Text 2**. A couple hours go by and now I have a [GitHub repo](http://github.com/otternq/EFactor) and a [Web App](http://efactor.nickotter.com) that allows people to sign-in with [GitHub](http://github.com) and [BitBucket](http://bitbucket.org) and start logging their interruptions.
+
+Its nothing special (just a Sinatra App using MongoLab running on Heroku) but I'm curious to see what kind of data this produces. Right now the app just logs interruptions, but I'll add **Body Hours** next so that I can start graphing/exporting data.
+
+If you want to contribute, fork the [repo](http://github.com/otternq/EFactor) and make a feature branch then send me a pull request. Also, checkout my current [issue list](https://github.com/otternq/EFactor/issues)
