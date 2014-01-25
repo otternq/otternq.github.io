@@ -161,3 +161,13 @@ ul.posts span {
 .post pre.terminal code {
   background-color: #333;
 }
+
+/**************
+*
+* My Additions
+*
+*/
+
+.post img {
+  max-width: 100%;
+}
