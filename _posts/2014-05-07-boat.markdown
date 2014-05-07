@@ -18,7 +18,7 @@ This is awesome, but my buddy isn't a programming and doesn't really know how to
 boat to be connected to the internet at all times...kind of a challenge for a sea farring ships. This is where I get involved.
 
 The Github repo is a great start (don't love how it hosts both the local client with the remote application, but doesn't effet too much)
-so I [fork it](https://github.com/otternq/bmvmonitor) and start refactoring it to allow local storage. So far it now allows storage to a _CSV_
+so I [fork it](https://github.com/otternq/bmvmonitor/tree/dev_file_store) and start refactoring it to allow local storage. So far it now allows storage to a _CSV_
 and I'm working on local _Sqlite_ storage. I've also created a [PyPi](https://pypi.python.org/pypi/BMV) package so others can easily install
 the software themselves.
 
