@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Coding on a boat"
+date:   2014-5-7 13:11:00
+tags: ["python", "raspberrypi", "pypi"]
+---
+
+##The Beggining
+
+A friend of mine charters out his sail boat most of the year, and has been recieving complaints about the battery.
+Being an engineer he purchased a [BMV battery monitor](http://www.victronenergy.com/battery-monitors/bmv-600s%20and%20bmv-602s/) that would allow him to watch the voltage usage to see what is causing
+the battery to misbehave. The problem with this is that you have to be on the boat to watch the monitor....not exactly what
+a paying customer wants. So he found a blog for [connecting the monitor to a usb](http://jeperez.com/connect-bmv-victron-computer/) 
+and an acompanying blog about [recording the monitors data to a remote server](http://jeperez.com/online-monitor-victron-bmv-600s-and-bmv-602s/).
+It even comes with its own [Github repo](https://github.com/jepefe/bmvmonitor), excellent.
+
+This is awesome, but my buddy isn't a programming and doesn't really know how to install this stuff, also it requires the 
+boat to be connected to the internet at all times...kind of a challenge for a sea farring ships. This is where I get involved.
+
+The Github repo is a great start (don't love how it hosts both the local client with the remote application, but doesn't effet too much)
+so I [fork it](https://github.com/otternq/bmvmonitor/tree/dev_file_store) and start refactoring it to allow local storage. So far it now allows storage to a _CSV_
+and I'm working on local _Sqlite_ storage. I've also created a [PyPi](https://pypi.python.org/pypi/BMV) package so others can easily install
+the software themselves.
+
+##Whats Next?
+
+Now I'm finishing the python package to allow _Sqlite_ storage, then I'll be making a linux service so the script will start
+when a computer boots. I will also need to work out an easy way for boat owners to retrieve their data.
